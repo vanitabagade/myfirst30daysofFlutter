@@ -6,10 +6,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text('Home '),),
+      appBar: AppBar(
+        title: Text('Home '),
+      ),
       body: Center(
         child: Container(
-          child: Text('My name is $name and this is day $days'),
+          child: Text(
+            'My name is $name and this is day $days',
+            style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
       drawer: Drawer(),
